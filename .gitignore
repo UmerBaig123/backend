@@ -29,9 +29,7 @@ lerna-debug.log*
 # This is one of the most important files to ignore. The .env file contains
 # sensitive information like API keys, database passwords, and other secrets.
 # Each developer should have their own local .env file.
-# A .env.example file, however, SHOULD be committed to show what variables are needed.
-.env
-.env.*
+
 !.env.example
 !.env.test
 
