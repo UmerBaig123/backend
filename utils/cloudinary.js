@@ -3,9 +3,9 @@ import dotenv from "dotenv";
 dotenv.config();
 
 cloudinary.config({
-  cloud_name: dzwbavygy,
-  api_key: 841186918211227,
-  api_secret: n_qGceYSjqypUPlQOlic8 - wyygQ,
+  cloud_name: "dzwbavygy",
+  api_key: "841186918211227",
+  api_secret: "n_qGceYSjqypUPlQOlic8-wyygQ",
 });
 
 // Check Cloudinary connection by pinging the API
