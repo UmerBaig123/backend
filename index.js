@@ -59,13 +59,13 @@ app.use((req, res, next) => {
 const allowedOrigins = isProduction
   ? process.env.ALLOWED_ORIGINS
     ? process.env.ALLOWED_ORIGINS.split(",")
-    : ["https://yourdomain.com", "http://16.171.22.172:3000"]
+    : ["https://yourdomain.com", "https://frontend-nine-tau-56.vercel.app"]
   : [
       "http://localhost:3000",
       "http://localhost:3001",
       "http://127.0.0.1:3000",
       "http://127.0.0.1:3001",
-      "http://16.171.22.172:3000",
+      "https://frontend-nine-tau-56.vercel.app",
     ];
 
 app.use(
