@@ -90,7 +90,7 @@ const safeParseJSON = (
   }
 };
 
-const genAI = new GoogleGenerativeAI(AIzaSyB8JtyzRzs1jytoApClLiC2erz6LQvSQn4);
+const genAI = new GoogleGenerativeAI("AIzaSyB8JtyzRzs1jytoApClLiC2erz6LQvSQn4");
 
 // Phase 1 processing functions for different file types
 async function processPhase1PDF(tempFilePath, prompt) {

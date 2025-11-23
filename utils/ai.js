@@ -25,7 +25,7 @@ import {
 dotenv.config();
 
 // Initialize Google Gemini API
-const genAI = new GoogleGenerativeAI(AIzaSyB8JtyzRzs1jytoApClLiC2erz6LQvSQn4);
+const genAI = new GoogleGenerativeAI("AIzaSyB8JtyzRzs1jytoApClLiC2erz6LQvSQn4");
 
 // Add region check function
 async function checkGeminiRegion() {
