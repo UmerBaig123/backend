@@ -16,7 +16,7 @@ import userRoutes from "./routes/userRoutes.js";
 import dashboardRoutes from "./routes/dashboardRoutes.js";
 import totalProposedAmountRoutes from "./routes/totalProposedAmountRoutes.js";
 
-console.log("MONGODB_URI:", process.env.MONGODB_URI);
+console.log("MONGODB_URI:", mongodb+srv://baigmuhammadumer2004_db_user:ARas0eWDI929pOIj@cluster0.ha3r6gu.mongodb.net/);
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -115,7 +115,7 @@ const sessionConfig = {
 if (isProduction) {
   const MongoStore = (await import("connect-mongo")).default;
   sessionConfig.store = MongoStore.create({
-    mongoUrl: process.env.MONGODB_URI,
+    mongoUrl: mongodb+srv://baigmuhammadumer2004_db_user:ARas0eWDI929pOIj@cluster0.ha3r6gu.mongodb.net/,
     touchAfter: 24 * 3600, // lazy session update
     ttl: 7 * 24 * 60 * 60, // 7 days
   });
